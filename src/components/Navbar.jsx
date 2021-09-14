@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IconContext } from "react-icons";
+import Logo from "../images/navbar-logo.png";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -9,7 +10,12 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         <div className="logo">
-          <h2>HRTV</h2>
+          <img
+            className="logo-image"
+            src={Logo}
+            alt="LOGO"
+            style={{ width: 150 }}
+          />
         </div>
 
         <div

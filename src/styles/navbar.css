@@ -155,6 +155,9 @@
   .logo {
     height: 5rem;
   }
+  .logo-image {
+    width: 1000px;
+  }
 
   .logo h2 {
     font-size: 2rem;
