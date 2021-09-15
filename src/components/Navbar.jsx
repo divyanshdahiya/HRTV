@@ -1,53 +1,87 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IconContext } from "react-icons";
 import Logo from "../images/navbar-logo.png";
+import { FaSearch, FaRegStar, FaRegClipboard } from "react-icons/fa";
+import { RiDashboardLine, RiMovie2Line, RiSettings2Line } from "react-icons/ri";
+import { BiCameraMovie, BiSlideshow, BiLogOut } from "react-icons/bi";
+import { FcClapperboard } from "react-icons/fc";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+
   return (
     <>
-      <nav className="main-nav">
-        <div className="logo">
-          <img
-            className="logo-image"
-            src={Logo}
-            alt="LOGO"
-            style={{ width: 150 }}
-          />
+      <div className="sidebar">
+        <div className="header">
+          <div className="left-header">
+            <FcClapperboard className="logo" />
+            <div className="header-tittle">HRtv</div>
+          </div>
+          <GiHamburgerMenu className="logo" id="btn" />
         </div>
-
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }
-        >
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-          </ul>
-        </div>
-        <IconContext.Provider value={{ color: "white" }}>
-          <div className="hamburger">
-            <div className="hamburger-menu">
-              <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                <GiHamburgerMenu />
+        <ul className="nav-list">
+          <li>
+            <div className="search-bar">
+              <FaSearch className="logo search-logo" />
+              <input type="text" placeholder="Search..." />
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <RiDashboardLine className="logo" />
+              <span className="links_name">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <BiCameraMovie className="logo" />
+              <span className="links_name">Movies</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <BiSlideshow className="logo" />
+              <span className="links_name">Tv Shows</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <RiMovie2Line className="logo" />
+              <span className="links_name">Series</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaRegStar className="logo" />
+              <span className="links_name">My Favourites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaRegClipboard className="logo" />
+              <span className="links_name">My Wishlist</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <RiSettings2Line className="logo" />
+              <span className="links_name">Settings</span>
+            </a>
+          </li>
+          <li className="profile">
+            <div className="profile-details">
+              <div className="profile-name">Divyansh Dahiya</div>
+            </div>
+            <div className="log-out">
+              <a href="">
+                <BiLogOut className="logo" />
+                <span className="links_name">Log Out</span>
               </a>
             </div>
-          </div>
-        </IconContext.Provider>
-      </nav>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };
