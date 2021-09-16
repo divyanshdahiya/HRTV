@@ -9,3 +9,7 @@ body {
   background: #161b22;
   color: #fff;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 16% 74%;
+}

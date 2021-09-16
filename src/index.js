@@ -6,7 +6,14 @@ import Header from "./components/Header";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
+    <div className="grid-container">
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <Header />
+      </div>
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

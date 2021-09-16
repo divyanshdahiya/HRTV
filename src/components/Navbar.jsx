@@ -13,10 +13,10 @@ const Navbar = () => {
   return (
     <>
       <div className="sidebar">
-        <div className="header">
-          <div className="left-header">
+        <div className="header-nav">
+          <div className="left-header-nav">
             <FcClapperboard className="logo" />
-            <div className="header-tittle">HRtv</div>
+            <div className="header-nav-tittle">HRtv</div>
           </div>
           <GiHamburgerMenu className="logo" id="btn" />
         </div>

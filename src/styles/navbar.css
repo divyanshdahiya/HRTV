@@ -8,18 +8,20 @@
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
 }
-.header {
+.header-nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 0 50px 0;
   border-bottom: solid 1px #fff;
 }
-.left-header {
+.left-header-nav {
   display: flex;
   align-items: center;
 }
-.header-tittle {
+.header-nav-tittle {
   font-size: 20px;
 }
 .nav-list {
@@ -67,7 +69,7 @@
   border: none;
   border-radius: 12px;
   transition: all 0.5s ease;
-  background: #1d1b31;
+  background: #4a4a4b;
   padding-left: 50px;
 }
 .search-logo {
