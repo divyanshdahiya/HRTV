@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
+import "../styles/index.css";
 import Logo from "../images/navbar-logo.png";
 import { FaSearch, FaRegStar, FaRegClipboard } from "react-icons/fa";
 import { RiDashboardLine, RiMovie2Line, RiSettings2Line } from "react-icons/ri";

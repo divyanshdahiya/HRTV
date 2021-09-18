@@ -1,0 +1,31 @@
+.featured-section {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.featured-container {
+  max-width: 100px;
+}
+.featured-artist-image {
+  border-radius: 50%;
+  border: solid 10px #7272729a;
+  width: 85px;
+  justify-content: center;
+}
+.featured-container li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.featured-container li a p {
+  text-align: center;
+}
+.featured-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  border-color: #161b22;
+  border-style: solid;
+  cursor: pointer;
+  color: #fff;
+}

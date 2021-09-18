@@ -13,3 +13,9 @@ body {
   display: grid;
   grid-template-columns: 16% 74%;
 }
+.grid-right {
+  padding-left: 25px;
+}
+.featured-heading {
+  padding: 30px;
+}
