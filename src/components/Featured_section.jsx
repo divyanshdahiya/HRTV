@@ -12,8 +12,10 @@ function Featured_section() {
     "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4";
   const poster =
     "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg";
+
   return (
     <>
+      <h1 className="featured-heading">Featured-Artists</h1>
       <div className="featured-section">
         <div>
           <ul className="featured-container">

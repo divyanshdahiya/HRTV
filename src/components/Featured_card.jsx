@@ -14,7 +14,7 @@ function Featured_card(prop) {
             <img
               className="featured-artist-image"
               src={prop.image}
-              alt="Artist-Image"
+              alt="Artist"
             />
             <p>{prop.tittle}</p>
           </div>
